@@ -606,7 +606,7 @@ with tabs[3]:
         fig.update_layout(xaxis_title="", yaxis_title="", xaxis_tickangle=-30,
                           legend_title_text="", margin=dict(t=10, b=10))
         st.plotly_chart(fig, use_container_width=True)
-        st.caption("所有产品在冰(Ice)、蓝莓(blueberry)、草莓(strawberry)的频率均很高；不合规产品中mango/passion fruit和blue raspberry等占比显著更高。")
+        st.caption("所有产品在冰(Ice)、蓝莓(blueberry)、草莓(strawberry)的频率均很高；不合规产品中mango/passion fruit等占比显著更高。")
 
     st.markdown('<p class="section-title">各口味分类高频元素</p>', unsafe_allow_html=True)
     cats = fdf["分类"].value_counts().index.tolist()
